@@ -1,0 +1,75 @@
+{% from "showlinks.html" import show_links, employeelinks %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECODERS-homepage</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child child1">
+            <h1 class="text-center text-decoration-underline bg-danger text-light p-3" id="mainheading" name="header">Ecoders</h1>
+
+            {{ show_links() }}
+        </div>
+        <div class="child child2 text-center">
+          <i><h1 class="secondaryheading text-center display-1">Dropdown page</h1></i>
+                <div class="right d-flex justify-content-evenly container mt-5 mb-5">
+                    
+                    <select name="monthdropdown" id="1q2w3e">
+                        <option value="Jan" class="option option1">Jan</option>
+                        <option value="Feb" class="option option2">Feb</option>
+                        <option value="Mar" class="option option3">Mar</option>
+                        <option value="Apr" class="option option4">Apr</option>
+                        <option value="May" class="option option5">May</option>
+                        <option value="Jun" class="option option6">Jun</option>
+                        <option value="Jul" class="option option7">Jul</option>
+                        <option value="Aug" class="option option8">Aug</option>
+                        <option value="Sep" class="option option9">Sep</option>
+                        <option value="Oct" class="option option10">Oct</option>
+                        <option value="Nov" class="option option11">Nov</option>
+                        <option value="Dec" class="option option12">Dec</option>
+                    </select>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Age dropdown
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item">Above 18</li>
+                        <li class="dropdown-item">Below 18</li>
+
+                      </ul>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        NavLinks
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5000/home">Home</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5000/contact">Contact</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5000/employee">Employee</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5000/testcase">Testcase</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5000/defect">Defect Report</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5000/alerts">Alerts</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="child child3">
+            <small><p class="bg-danger text-center text-light">copyright &copy;Ecoders,Skillmine</p></small>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> 
+</body>
+</html>

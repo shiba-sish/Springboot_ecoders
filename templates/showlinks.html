@@ -1,0 +1,38 @@
+{% macro  show_links()  %}
+
+<ul class="nav justify-content-center bg-light">
+    <li class="nav-item">
+      <a class="nav-link text-dark myhomelink" id="1e2r3t" name="Muzz" href="{{url_for('home')}}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="{{url_for('contact')}}">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="{{url_for('employee')}}">Employee</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="{{url_for('testcase')}}">Test case</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="{{url_for('defect')}}">Defect report</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="{{url_for('dropdown')}}">Dropdown</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="{{url_for('alerts')}}">Alerts</a>
+    </li>
+  </ul>
+
+  {% endmacro %}
+
+
+  {% macro employeelinks() %}
+  <ul class="list-group list-group-flush text-center">
+    <li class="list-group-item">Add Employee</li>
+    <li class="list-group-item">View Employee</li>
+    <li class="list-group-item">View One Employee</li>
+    <li class="list-group-item">Update Employee</li>
+    <li class="list-group-item">Delete Employee</li>
+  </ul>
+  {% endmacro %}
